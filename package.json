@@ -1,0 +1,28 @@
+{
+  "name": "build-a-team",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PurviMec/build-a-team.git"
+  },
+  "author": "Purvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PurviMec/build-a-team/issues"
+  },
+  "homepage": "https://github.com/PurviMec/build-a-team#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
