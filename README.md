@@ -25,6 +25,7 @@
 1. Run `npm test` to run jest for tests.
 
 ## Screen-shot
+![Screen Shot 2021-12-28 at 4 58 28 PM](https://user-images.githubusercontent.com/86253830/147610602-f6f1f460-fcc7-46e5-a786-6227ee0373e2.png)
 
 ## Contributors
 ### Please feel free to contact us with any questions
