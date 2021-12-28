@@ -3,9 +3,9 @@ const createManager = function (manager) {
     return`
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="header">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4><i class="material-icons">content_paste</i> Manager </h4>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
@@ -23,7 +23,7 @@ const createEngineer = function (engineer) {
     <div class="card h-100">
         <div class="card-header">
             <h3>${engineer.name}</h3>
-            <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+            <h4><i class="material-icons">laptop_mac</i> Engineer </h4>
         </div>
         <div class="card-body">
             <p class="id">ID: ${engineer.id}</p>
@@ -41,7 +41,7 @@ const createIntern = function (intern) {
         <div class="card h-100">
             <div class="card-header">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                <h4><i class="material-icons">assignment_ind</i> Intern </h4>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${intern.id}</p>
@@ -103,11 +103,11 @@ const generateMyTeamPage = function(employeeCards) {
     <body>
         <header>
             <nav class="navbar" id="navbar">
-                <span class="p-3 mb-2 bg-danger text-white"> My Team </span>
+                <span class="p-3 mb-2 bg-danger text-white w-100 h1"> My Team </span>
             </nav>
             <main>
                 <div class="container">
-                    <div class="row justify-content-center" id="team-cards">
+                    <div class="row justify-content-center" id="employeeCards">
                         ${employeeCards}
                     </div>
                 </div>
