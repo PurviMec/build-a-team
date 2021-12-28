@@ -1,4 +1,4 @@
-//const generatePage = require('./src/page-template');
+const generatePageHTML = require('./src/page-template');
 
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
@@ -14,8 +14,20 @@ const addManager = () => {
     return inquirer.prompt ([
         {
             type: 'input',
-            name: 'managerName',
+            name: 'name',
             message: 'Please provide name of manager for this department',
+            validate: input => {
+                if(!input) {
+                    console.log('Please provide valid input');
+                    return;
+                } 
+                return true;
+            }
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: "Please enter the employee ID.",
             validate: input => {
                 if(!input) {
                     console.log('Please provide valid input');
@@ -173,10 +185,29 @@ const addEmployee = () => {
     
 };
 
+const writeFile = data => {
+    fs.writeFile('./dist/index.html', data, err => {
+        // if there is an error 
+        if (err) {
+            console.log(err);
+            return;
+        // when the profile has been created 
+        } else {
+            console.log("Your Team Has Created Please Check index.html")
+        }
+    })
+}; 
+
 addManager()
 .then (addEmployee)
+.then (uniArray => {
+    return generatePageHTML(uniArray);
+})
+.then(pageHTML => {
+    return writeFile(pageHTML);
+})
 .catch(err => {
-    console.log(arr);
+    console.log(err);
 });
     
 
