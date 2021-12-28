@@ -3,14 +3,16 @@ const createManager = function (manager) {
     return`
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="header">
+            <div class="card-header p-3 mb-2 bg-primary text-white">
                 <h3>${manager.name}</h3>
-                <h4><i class="material-icons">content_paste</i> Manager </h4>
+                <h4><span class="material-icons">coffee</span> Manager </h4>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${manager.id}</p>
-                <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                <p class="office">Office Number: ${manager.officeNumber}</p>
+            <ul class="list-group list-group-flush card">
+                <li class="id list-group-item">ID: ${manager.id}</li>
+                <li class="email list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
+                <li class="office list-group-item">Office Number: ${manager.officeNumber}</li>
+            </ul>
             </div>
         </div>
     </div>
@@ -21,14 +23,16 @@ const createEngineer = function (engineer) {
     return`
     <div class="col-4 mt-4">
     <div class="card h-100">
-        <div class="card-header">
+        <div class= "card-header p-3 mb-2 bg-primary text-white">
             <h3>${engineer.name}</h3>
-            <h4><i class="material-icons">laptop_mac</i> Engineer </h4>
+            <h4><span class="material-icons"> laptop_mac</span> Engineer </h4>
         </div>
         <div class="card-body">
-            <p class="id">ID: ${engineer.id}</p>
-            <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-            <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+        <ul class="list-group list-group-flush card">
+            <li class="id list-group-item">ID: ${engineer.id}</li>
+            <li class="email list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+            <li class="github list-group-item">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></li>
+        </ul>
         </div>
     </div>
     </div>
@@ -39,14 +43,16 @@ const createIntern = function (intern) {
     return`
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header p-3 mb-2 bg-primary text-white">
                 <h3>${intern.name}</h3>
-                <h4><i class="material-icons">assignment_ind</i> Intern </h4>
+                <h4><i class="material-icons">school</i> Intern </h4>
             </div>
             <div class="card-body">
-                <p class="id">ID: ${intern.id}</p>
-                <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
-                <p class="school">School: ${intern.school}</p>
+            <ul class="list-group list-group-flush card">
+                <li class="id list-group-item">ID: ${intern.id}</li>
+                <li class="email list-group-item">Email:<a href="mailto:${intern.email}">${intern.email}</a></li>
+                <li class="school list-group-item">School: ${intern.school}</li>
+            </ul>
             </div>
     </div>
     </div>
@@ -103,7 +109,7 @@ const generateMyTeamPage = function(employeeCards) {
     <body>
         <header>
             <nav class="navbar" id="navbar">
-                <span class="p-3 mb-2 bg-danger text-white w-100 h1"> My Team </span>
+                <span class="p-3 mb-2 text-center bg-danger text-white w-100 h1"> My Team </span>
             </nav>
             <main>
                 <div class="container">
