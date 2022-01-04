@@ -10,6 +10,7 @@
 ## Table of Contents
 * [Installation](#installation)
 * [Tests](#tests)
+* [Video](#video)
 * [Contributors](#contributors)
 * [Screen-shot](#screen-shot)
 * [License](#license)
@@ -23,6 +24,9 @@
 
 ## Tests
 1. Run `npm test` to run jest for tests.
+
+## video
+https://watch.screencastify.com/v/aBMDtl2y0RTTCF4W5Soz (Links to an external site.)
 
 ## Screen-shot
 ![Screen Shot 2021-12-28 at 4 58 28 PM](https://user-images.githubusercontent.com/86253830/147610602-f6f1f460-fcc7-46e5-a786-6227ee0373e2.png)
